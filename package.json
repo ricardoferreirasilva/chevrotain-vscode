@@ -4,6 +4,7 @@
     "description": "An extension that provides support for chevrotain development.",
     "version": "0.0.1",
     "publisher": "gallaeciandruid",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.25.0"
     },
