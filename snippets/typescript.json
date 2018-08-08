@@ -48,5 +48,17 @@
             "});"
         ],
         "description": "Parsing DSL method, that indicates a repetition of zero or more."
+    },
+    "at_least_one_sep" : {
+        "prefix" : "AT_LEAST_ONE_SEP",
+        "body":[
+            "this.AT_LEAST_ONE_SEP({",
+            "\tSEP: $1,",
+            "\tDEF: () => {",
+            "\t\t $2",
+            "\t}",
+            "});"
+        ],
+        "description": "Convenience method, same as MANY_SEP but the repetition is of one or more. failing to match at least one repetition will result in a parsing error and cause the parser to attempt error recovery."
     }
 }
