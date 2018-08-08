@@ -1,9 +1,24 @@
 {
-    "test" : {
-        "prefix" : "test666",
+    "rule" : {
+        "prefix" : "RULE",
         "body":[
-            "test"
+            "this.RULE('$1', () => {",
+            "})"
         ],
-        "description": "test"
+        "description": "Snippet for a rule."
+    },
+    "consume" : {
+        "prefix" : "CONSUME",
+        "body":[
+            "this.CONSUME($1)"
+        ],
+        "description": "A Parsing DSL method use to consume a single Token. In EBNF terms this is equivalent to a Terminal."
+    },
+    "subrule" : {
+        "prefix" : "SUBRULE",
+        "body":[
+            "this.SUBRULE($1)"
+        ],
+        "description": "The Parsing DSL Method is used by one rule to call another. It is equivalent to a non-Terminal in EBNF notation."
     }
 }
