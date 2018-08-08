@@ -1,7 +1,10 @@
 # Change Log
 All notable changes to the "chevrotain-vscode" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
-- Initial release
+
+
+## [0.1]
+- Setting up of the project.
+###
+- Added snippets for rule, subrule, consume, or, option, many, at_least_one_sep chevrotain parsing DSL methods.
