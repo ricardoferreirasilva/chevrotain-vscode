@@ -15,10 +15,14 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [
+        "snippets": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+            "language": "typescript",
+            "path": "./snippets/typescript.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/typescript.json"
             }
         ]
     },
