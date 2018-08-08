@@ -3,22 +3,32 @@
         "prefix" : "RULE",
         "body":[
             "this.RULE('$1', () => {",
-            "})"
+            "});"
         ],
         "description": "Snippet for a rule."
     },
     "consume" : {
         "prefix" : "CONSUME",
         "body":[
-            "this.CONSUME($1)"
+            "this.CONSUME($1);"
         ],
         "description": "A Parsing DSL method use to consume a single Token. In EBNF terms this is equivalent to a Terminal."
     },
     "subrule" : {
         "prefix" : "SUBRULE",
         "body":[
-            "this.SUBRULE($1)"
+            "this.SUBRULE($1);"
         ],
         "description": "The Parsing DSL Method is used by one rule to call another. It is equivalent to a non-Terminal in EBNF notation."
+    },
+    "or" : {
+        "prefix" : "OR",
+        "body":[
+            "this.OR([",
+            "\t{ ALT: () => this.CONSUME($1) },",
+            "\t{ ALT: () => this.CONSUME($2) }",
+            "]);"
+        ],
+        "description": "Parsing DSL method that indicates a choice between a set of alternatives must be made. This is equivalent to an EBNF alternation (A | B | C | D ...), except that the alternatives are ordered like in a PEG grammar. This means that the first matching alternative is always chosen."
     }
 }
