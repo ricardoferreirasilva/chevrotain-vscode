@@ -30,5 +30,23 @@
             "]);"
         ],
         "description": "Parsing DSL method that indicates a choice between a set of alternatives must be made. This is equivalent to an EBNF alternation (A | B | C | D ...), except that the alternatives are ordered like in a PEG grammar. This means that the first matching alternative is always chosen."
+    },
+    "option" : {
+        "prefix" : "OPTION",
+        "body":[
+            "this.OPTION(() => {",
+            "\tthis.SUBRULE($1);",
+            "});"
+        ],
+        "description": "Parsing DSL Method that Indicates an Optional production."
+    },
+    "many" : {
+        "prefix" : "MANY",
+        "body":[
+            "this.MANY(() => {",
+            "\tthis.SUBRULE($1);",
+            "});"
+        ],
+        "description": "Parsing DSL method, that indicates a repetition of zero or more."
     }
 }
