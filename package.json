@@ -12,7 +12,6 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -40,5 +39,8 @@
         "tslint": "^5.8.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
+    },
+    "repository": {
+        "url": "https://github.com/tansvanio/chevrotain-vscode"
     }
 }
