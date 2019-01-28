@@ -2,7 +2,7 @@
     "rule" : {
         "prefix" : "RULE",
         "body":[
-            "this.RULE('$1', () => {",
+            "this.RULE('$1', ($2) => {",
             "});"
         ],
         "description": "Snippet for a rule."
@@ -25,8 +25,8 @@
         "prefix" : "OR",
         "body":[
             "this.OR([",
-            "\t{ ALT: () => this.CONSUME($1) },",
-            "\t{ ALT: () => this.CONSUME($2) }",
+            "\t{ ALT: ($1) => this.CONSUME($2) },",
+            "\t{ ALT: ($3) => this.CONSUME($4) }",
             "]);"
         ],
         "description": "Parsing DSL method that indicates a choice between a set of alternatives must be made. This is equivalent to an EBNF alternation (A | B | C | D ...), except that the alternatives are ordered like in a PEG grammar. This means that the first matching alternative is always chosen."
@@ -34,8 +34,8 @@
     "option" : {
         "prefix" : "OPTION",
         "body":[
-            "this.OPTION(() => {",
-            "\tthis.SUBRULE($1);",
+            "this.OPTION(($1) => {",
+            "\tthis.SUBRULE($2);",
             "});"
         ],
         "description": "Parsing DSL Method that Indicates an Optional production."
@@ -43,8 +43,8 @@
     "many" : {
         "prefix" : "MANY",
         "body":[
-            "this.MANY(() => {",
-            "\tthis.SUBRULE($1);",
+            "this.MANY(($1) => {",
+            "\tthis.SUBRULE($2);",
             "});"
         ],
         "description": "Parsing DSL method, that indicates a repetition of zero or more."
@@ -54,8 +54,8 @@
         "body":[
             "this.AT_LEAST_ONE_SEP({",
             "\tSEP: $1,",
-            "\tDEF: () => {",
-            "\t\t $2",
+            "\tDEF: ($2) => {",
+            "\t\t $3",
             "\t}",
             "});"
         ],

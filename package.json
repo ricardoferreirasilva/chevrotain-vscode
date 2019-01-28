@@ -17,8 +17,8 @@
     "contributes": {
         "snippets": [
             {
-            "language": "typescript",
-            "path": "./snippets/typescript.json"
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
             },
             {
                 "language": "javascript",
