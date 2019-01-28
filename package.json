@@ -8,6 +8,7 @@
     "engines": {
         "vscode": "^1.25.0"
     },
+    "icon": "chevrotain.png",
     "categories": [
         "Other"
     ],
