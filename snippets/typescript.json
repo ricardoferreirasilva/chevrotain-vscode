@@ -49,6 +49,17 @@
         ],
         "description": "Parsing DSL method, that indicates a repetition of zero or more."
     },
+    "many_sep" : {
+        "prefix" : "MANY_SEP",
+        "body":[
+            "this.MANY_SEP({",
+            "\tSEP:$1,",
+            "\tDEF: ($2) => {",
+            "\t\t this.CONSUME($3)};",
+            "});"
+        ],
+        "description": "Parsing DSL method, that indicates a repetition of zero or more."
+    },
     "at_least_one_sep" : {
         "prefix" : "AT_LEAST_ONE_SEP",
         "body":[
