@@ -2,7 +2,7 @@
     "name": "chevrotain-vscode",
     "displayName": "Chevrotain for Visual Studio Code",
     "description": "An extension that provides support for chevrotain development.",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "gallaeciandruid",
     "license": "MIT",
     "engines": {
