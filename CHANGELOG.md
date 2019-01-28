@@ -1,5 +1,8 @@
 # Change Log
-All notable changes to the "chevrotain-vscode" extension will be documented in this file.
+All the changes to the "Chevrotain for Visual Studio Code" extension will be documented in this file.
+
+## [0.1.3]
+- Added MANY_SEP snippet support.
 
 ## [0.1.2]
 - Fixed display name of the extension.
