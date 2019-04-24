@@ -1,5 +1,7 @@
 # Change Log
 All the changes to the "Chevrotain for Visual Studio Code" extension will be documented in this file.
+## [0.1.4]
+- Removed package-lock from repository.
 
 ## [0.1.3]
 - Added MANY_SEP snippet support.
